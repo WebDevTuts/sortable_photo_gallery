@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  padding: 20px 10px 20px 30px;
+  font: 14px Arial;
+  color: #bd8a1e;
+  background-color: #000;
+}
+
+p { margin: 0 0 1em 0; }
+a, a:visited { color: #00f; }
+img.background { position: fixed; right: 0; bottom: 0; }
