@@ -20,3 +20,17 @@ img.background { position: fixed; right: 0; bottom: 0; }
 }
 
 .gallery { width: 80%; margin: 0 auto; position: relative; }
+
+.gallery .sorting {
+  margin-bottom: 15px;
+  border: 1px solid #6d4d2e;
+  background-color: rgba(109, 77, 46, .3);
+}
+.gallery .sorting span {
+  padding-right: 20px;
+  color: #6d4d2e;
+  font-style: italic;
+}
+.gallery .sorting div {
+  margin: 10px 0px 10px 10px;
+}
