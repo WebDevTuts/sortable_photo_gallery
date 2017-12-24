@@ -34,3 +34,24 @@ img.background { position: fixed; right: 0; bottom: 0; }
 .gallery .sorting div {
   margin: 10px 0px 10px 10px;
 }
+.gallery .sorting a {
+  color: #fff;
+  font-size: .85em;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 3px 20px;
+  background: url('../images/check_normal.gif') no-repeat 0px 3px;
+}
+.gallery .sorting a:hover { color: #e5aa2c; }
+.gallery .sorting a.selected {
+  color: #e5aa2c;
+  background-image: url('../images/check_selected.gif');
+}
+
+.gallery .photos .thumbnail_container { position: relative; }
+.gallery .photos .thumbnail_container a.thumbnail { position: absolute; }
+.gallery .photos .thumbnail_container a.thumbnail img {
+  width: 75px;
+  height: 75px;
+  border: 1px solid #6d4d2e;
+}
