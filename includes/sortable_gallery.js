@@ -8,5 +8,13 @@ $(document).ready(function() {
 });
 
 function positionThumbnails() {
-  alert('ready to reposition');
+  /* debug */
+  $('.debug-remainder').html('');
+
+  var containerWidth = $('.photos').width();
+  var thumbnail_R = 0;
+  var thumbnail_C = 0;
+  var thumbnailWidth = $('a.thumbnail img:first-child').outerWidth() + window.thumbnailSpacing;
+  var thumbnailHeight = $('a.thumbnail img:first-child').outerHeight() + window.thumbnailSpacing;
+  var max_C = Math.floor(containerWidth / thumbnailWidth);
 }
