@@ -1,6 +1,12 @@
 var thumbnailSpacing = 15;
 
 $(document).ready(function() {
+  $('a.sortLink').on('click', function(e) {
+    e.preventDefault();
+    $('a.sortLink').removeClass('selected');
+    $(this).addClass('selected');
+  });
+
   $('.gallery .sorting').css('margin-bottom', window.thumbnailSpacing+'px');
   $('.thumbnail_container a.thumbnail').addClass('showMe');
 
