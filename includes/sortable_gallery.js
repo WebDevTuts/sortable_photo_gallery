@@ -17,4 +17,11 @@ function positionThumbnails() {
   var thumbnailWidth = $('a.thumbnail img:first-child').outerWidth() + window.thumbnailSpacing;
   var thumbnailHeight = $('a.thumbnail img:first-child').outerHeight() + window.thumbnailSpacing;
   var max_C = Math.floor(containerWidth / thumbnailWidth);
+
+  $('.thumbnail_container a.thumbnail.showMe').each(function(index) {
+    var remainder = (index % max_C) / 100;
+    var maxIndex = 0;
+    /* debug */
+    $('.debug-remainder').append(remainder+' - ');
+  });
 }
