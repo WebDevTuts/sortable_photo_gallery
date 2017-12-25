@@ -23,5 +23,15 @@ function positionThumbnails() {
     var maxIndex = 0;
     /* debug */
     $('.debug-remainder').append(remainder+' - ');
+
+    if (remainder === 0) {
+      if (index !== 0) {
+        thumbnail_R += thumbnailHeight;
+      }
+      thumbnail_C = 0;
+    } else {
+      thumbnail_C += thumbnailWidth;
+    }
   });
+
 }
