@@ -55,3 +55,14 @@ img.background { position: fixed; right: 0; bottom: 0; }
   height: 75px;
   border: 1px solid #6d4d2e;
 }
+
+
+/* Vertical */
+@media screen and (min-height: 50px) and (max-height: 520px) {}
+@media screen and (min-height: 521px) and (max-height: 700px) {}
+@media screen and (min-height: 701px) {}
+
+/* Horizontal */
+@media screen and (min-width: 50px) and (max-width: 500px) {}
+@media screen and (min-width: 501px) and (max-width: 960px) {}
+@media screen and (min-width: 961px) {}
