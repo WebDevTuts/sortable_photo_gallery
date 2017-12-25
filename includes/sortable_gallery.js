@@ -16,7 +16,15 @@ $(document).ready(function() {
 });
 
 function sortThumbnails(keyword) {
-  alert(keyword);
+  $('.thumbnail_container a.thumbnail').each(function() {
+    var thumbnailKeywords = $(this).attr('data-keywords');
+
+    if (keyword === 'all') {
+      $(this).addClass('showMe').removeClass('hideMe');
+    } else {
+
+    }
+  });
 }
 
 function positionThumbnails() {
