@@ -35,6 +35,14 @@ function positionThumbnails() {
   /* debug */
   $('.debug-remainder').html('');
 
+  $('.thumbnail_container a.thumbnail.hideMe').animate({'opacity':0},500, function() {
+    $(this).css({
+      'display': 'none',
+      'top': '0px',
+      'left': '0px'
+    });
+  });
+
   var containerWidth = $('.photos').width();
   var thumbnail_R = 0;
   var thumbnail_C = 0;
