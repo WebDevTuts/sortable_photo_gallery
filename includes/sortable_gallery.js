@@ -29,6 +29,8 @@ function sortThumbnails(keyword) {
       }
     }
   });
+
+  positionThumbnails();
 }
 
 function positionThumbnails() {
