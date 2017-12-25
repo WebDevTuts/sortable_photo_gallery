@@ -5,6 +5,8 @@ $(document).ready(function() {
     e.preventDefault();
     $('a.sortLink').removeClass('selected');
     $(this).addClass('selected');
+    var keyword = $(this).attr('data-keyword');
+    sortThumbnails(keyword);
   });
 
   $('.gallery .sorting').css('margin-bottom', window.thumbnailSpacing+'px');
@@ -12,6 +14,10 @@ $(document).ready(function() {
 
   positionThumbnails();
 });
+
+function sortThumbnails(keyword) {
+  alert(keyword);
+}
 
 function positionThumbnails() {
   /* debug */
