@@ -22,7 +22,11 @@ function sortThumbnails(keyword) {
     if (keyword === 'all') {
       $(this).addClass('showMe').removeClass('hideMe');
     } else {
-
+      if (thumbnailKeywords.indexOf(keyword) !== -1) {
+        $(this).addClass('showMe').removeClass('hideMe');
+      } else {
+        $(this).addClass('hideMe').removeClass('showMe');
+      }
     }
   });
 }
