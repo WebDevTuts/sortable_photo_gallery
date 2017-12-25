@@ -38,6 +38,13 @@ function positionThumbnails() {
       'top': thumbnail_R+'px',
       'left': thumbnail_C+'px'
     }, 500);
+
+    var newWidth = max_C * thumbnailWidth;
+    var newHeight = thumbnail_R + thumbnailHeight;
+    $('.thumbnail_container').css({
+      'width':newWidth+'px',
+      'height':newHeight+'px'
+    });
   });
 
 }

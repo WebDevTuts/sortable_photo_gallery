@@ -48,7 +48,7 @@ img.background { position: fixed; right: 0; bottom: 0; }
   background-image: url('../images/check_selected.gif');
 }
 
-.gallery .photos .thumbnail_container { position: relative; }
+.gallery .photos .thumbnail_container { position: relative; background-color: #777; }
 .gallery .photos .thumbnail_container a.thumbnail { position: absolute; }
 .gallery .photos .thumbnail_container a.thumbnail img {
   width: 75px;
