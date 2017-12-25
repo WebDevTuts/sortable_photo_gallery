@@ -32,6 +32,12 @@ function positionThumbnails() {
     } else {
       thumbnail_C += thumbnailWidth;
     }
+
+    $(this).css('display', 'block').animate({
+      'opacity': 1,
+      'top': thumbnail_R+'px',
+      'left': thumbnail_C+'px'
+    }, 500);
   });
 
 }
