@@ -99,7 +99,21 @@ function positionThumbnails() {
     });
   });
 
+  detectFancyboxLinks();
+
   var sortingWidth = $('.thumbnail_container').width() / thumbnailWidth;
   var newWidth = sortingWidth * thumbnailWidth - window.thumbnailSpacing;
   $('.sorting').css('width', newWidth+'px');
+}
+
+function detectFancyboxLinks() {
+  $('a.fancybox[rel="group"]').fancybox({
+    'transitionIn' : 'elastic',
+    'transitionOut' : 'elastic',
+    'titlePosition' : 'over',
+    'speedIn' : 500,
+    'overlayColor' : '#000',
+    'padding' : 0,
+    'overlayOpacity' : .75
+  });
 }
