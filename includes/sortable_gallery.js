@@ -15,6 +15,12 @@ $(document).ready(function() {
   positionThumbnails();
 });
 
+function checkViewport() {
+  var photosWidth = $('.photos').width();
+  var thumbnailContainerWidth = $('.thumbnail_container').width();
+  var thumbnailWidth = $('.thumbnail_container a.thumbnail:first-child').outerWidth();
+}
+
 function sortThumbnails(keyword) {
   $('.thumbnail_container a.thumbnail').each(function() {
     var thumbnailKeywords = $(this).attr('data-keywords');
