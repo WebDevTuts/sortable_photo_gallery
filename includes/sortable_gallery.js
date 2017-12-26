@@ -13,6 +13,8 @@ $(document).ready(function() {
   $('.thumbnail_container a.thumbnail').addClass('showMe');
 
   positionThumbnails();
+
+  setInterval('checkViewport()', 750);
 });
 
 function checkViewport() {
@@ -26,6 +28,9 @@ function checkViewport() {
   if ( (photosWidth - thumbnailWidth) > thumbnailContainerWidth ) {
     positionThumbnails();
   }
+
+  /* debug */
+  $('.debug-size').html('photosWidth = '+photosWidth+' thumbnailContainerWidth = '+thumbnailContainerWidth);
 }
 
 function sortThumbnails(keyword) {
