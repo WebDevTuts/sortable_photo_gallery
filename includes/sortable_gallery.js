@@ -99,4 +99,7 @@ function positionThumbnails() {
     });
   });
 
+  var sortingWidth = $('.thumbnail_container').width() / thumbnailWidth;
+  var newWidth = sortingWidth * thumbnailWidth - window.thumbnailSpacing;
+  $('.sorting').css('width', newWidth+'px');
 }
