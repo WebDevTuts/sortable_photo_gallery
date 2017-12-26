@@ -107,6 +107,15 @@ function positionThumbnails() {
 }
 
 function detectFancyboxLinks() {
+  // Fb built-in function that removes all Fb links that ran on previous Fb detection
+  $('a.fancybox').unbind('click.fb');
+
+  if ($(window).width() < 550) {
+    $('.thumbnail_container a.thumbnail').removeClass('fancybox').attr('target', '_blank');
+  } else {
+    $('.thumbnail_container a.thumbnail').addClass('fancybox').removeAttr('target');
+  }
+
   $('a.fancybox[rel="group"]').fancybox({
     'transitionIn' : 'elastic',
     'transitionOut' : 'elastic',
