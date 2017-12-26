@@ -12,3 +12,5 @@ Topics include:
 - Adding jQuery to your project
 - Adding a lightbox preview for your photos
 - Making the layout responsive
+
+[View demo site here.](https://webdevtuts.github.io/sortable_photo_gallery/)
