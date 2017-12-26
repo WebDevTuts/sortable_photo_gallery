@@ -30,7 +30,7 @@ function checkViewport() {
   }
 
   /* debug */
-  $('.debug-size').html('photosWidth = '+photosWidth+' thumbnailContainerWidth = '+thumbnailContainerWidth);
+  // $('.debug-size').html('photosWidth = '+photosWidth+' thumbnailContainerWidth = '+thumbnailContainerWidth);
 }
 
 function sortThumbnails(keyword) {
@@ -53,7 +53,7 @@ function sortThumbnails(keyword) {
 
 function positionThumbnails() {
   /* debug */
-  $('.debug-remainder').html('');
+  // $('.debug-remainder').html('');
 
   $('.thumbnail_container a.thumbnail.hideMe').animate({'opacity':0},500, function() {
     $(this).css({
@@ -74,7 +74,7 @@ function positionThumbnails() {
     var remainder = (index % max_C) / 100;
     var maxIndex = 0;
     /* debug */
-    $('.debug-remainder').append(remainder+' - ');
+    // $('.debug-remainder').append(remainder+' - ');
 
     if (remainder === 0) {
       if (index !== 0) {
