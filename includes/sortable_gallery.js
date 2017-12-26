@@ -19,6 +19,13 @@ function checkViewport() {
   var photosWidth = $('.photos').width();
   var thumbnailContainerWidth = $('.thumbnail_container').width();
   var thumbnailWidth = $('.thumbnail_container a.thumbnail:first-child').outerWidth();
+
+  if (photosWidth < thumbnailContainerWidth) {
+    positionThumbnails();
+  }
+  if ( (photosWidth - thumbnailWidth) > thumbnailContainerWidth ) {
+    positionThumbnails();
+  }
 }
 
 function sortThumbnails(keyword) {
