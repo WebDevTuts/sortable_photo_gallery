@@ -14,3 +14,5 @@ Topics include:
 - Making the layout responsive
 
 [View demo site here.](https://webdevtuts.github.io/sortable_photo_gallery/)
+
+![Preview](screenshot.png)
