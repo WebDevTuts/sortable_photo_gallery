@@ -10,7 +10,7 @@ $(document).ready(function() {
   });
 
   $('.gallery .sorting').css('margin-bottom', window.thumbnailSpacing+'px');
-  $('.thumbnail_container a.thumbnail').addClass('showMe');
+  $('.thumbnail_container a.thumbnail').addClass('showMe').addClass('fancybox').attr('rel','group');
 
   positionThumbnails();
 
@@ -38,12 +38,12 @@ function sortThumbnails(keyword) {
     var thumbnailKeywords = $(this).attr('data-keywords');
 
     if (keyword === 'all') {
-      $(this).addClass('showMe').removeClass('hideMe');
+      $(this).addClass('showMe').removeClass('hideMe').attr('rel','group');
     } else {
       if (thumbnailKeywords.indexOf(keyword) !== -1) {
-        $(this).addClass('showMe').removeClass('hideMe');
+        $(this).addClass('showMe').removeClass('hideMe').attr('rel','group');
       } else {
-        $(this).addClass('hideMe').removeClass('showMe');
+        $(this).addClass('hideMe').removeClass('showMe').attr('rel','none');
       }
     }
   });
